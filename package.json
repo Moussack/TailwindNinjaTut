@@ -1,0 +1,15 @@
+{
+   "name": "lesson1",
+   "version": "1.0.0",
+   "description": "",
+   "main": "index.js",
+   "scripts": {
+      "twb": "npx tailwindcss -i ./src/input.css -o ./build/css/output.css --watch",
+      "ls": "live-server build"
+   },
+   "author": "",
+   "license": "ISC",
+   "devDependencies": {
+      "tailwindcss": "^3.3.2"
+   }
+}
