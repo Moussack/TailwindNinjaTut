@@ -5,11 +5,13 @@
    "main": "index.js",
    "scripts": {
       "twb": "npx tailwindcss -i ./src/input.css -o ./build/css/output.css --watch",
-      "ls": "live-server build"
+      "ls": "live-server build",
+      "start": "concurrently \"npm run twb\" \"npm run ls\""
    },
    "author": "",
    "license": "ISC",
    "devDependencies": {
+      "concurrently": "^8.2.0",
       "tailwindcss": "^3.3.2"
    }
 }
